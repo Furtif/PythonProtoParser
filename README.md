@@ -19,7 +19,8 @@ Use [requestcatcher](www.requestcatcher.com) or similar site for *manual* PoGo R
 + GetHoloInventoryResponse (iSpoofer Only)
 ---------------------------------------
 #### How Do I Use This?
--You have 1 of 2 Options:-
+**You have 2 Options**
+
 (Option 1)
 >  Read The Source, It's Super Simple
 
