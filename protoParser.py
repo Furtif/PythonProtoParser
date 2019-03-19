@@ -1,14 +1,16 @@
-import numpy as np
-import json
-import time
-import google
+# Base Package Imports#
+import os, sys
+sys.path.append('./POGOProtosPython/')
 
-
-from base64 import b64decode
-from base64 import binascii
+import json, time
+from base64 import b64decode, binascii
 from datetime import datetime, timedelta
+
+# Third Party Imports #
+import google
 from google.protobuf.json_format import MessageToJson
 
+# Import from POGOProtosPython repo submodule ##
 from pogoprotos.networking.responses.get_map_objects_response_pb2 import GetMapObjectsResponse
 from pogoprotos.networking.responses.encounter_response_pb2 import EncounterResponse
 from pogoprotos.networking.responses.fort_search_response_pb2 import FortSearchResponse
