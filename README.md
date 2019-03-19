@@ -15,11 +15,14 @@ Use [requestcatcher](www.requestcatcher.com) or similar site for *manual* PoGo R
 + FortDetailsResponse
 + GetGymInfoResponse
 + GetPlayerResponse
-- GetHoloInventoryResponse (iSpoofer Only)
-
+----------------------------------------
++ GetHoloInventoryResponse (iSpoofer Only)
 ---------------------------------------
 #### How Do I Use This?
-2 Options:
-> (1): Read The Source, It's Super Simple
-> (2): Wait for me to finish up formatting outputs and giving you a Main.py and some configs for output type
+-You have 1 of 2 Options:-
+(Option 1)
+>  Read The Source, It's Super Simple
+
+(Option 2)
+> Wait for me to finish up formatting outputs and giving you a Main.py and some configs for output type
 (Raw ProtoClass/Raw Json/Formatted)
