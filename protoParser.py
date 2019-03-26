@@ -101,14 +101,7 @@ class ProtoParser(object):
         encounters = []
         self.wildPokemons = []
         self.nearbyPokemons = []
-        '''
-        catchablePokemons = []
-        playerData = []
-        playerStats = []
-        playerItems = []
-        '''
-        ###------###
-        
+               
         if responseType == "PlusPlus":
             proto_list = raw_resp['protos']
         if responseType == "Ispoofer":
@@ -128,30 +121,13 @@ class ProtoParser(object):
                 
                 try:
                     GMO = GetMapObjectsResponse()
+                    gmo = GMO.FromString(gmo_str)
                 except google.protobuf.message.Error as e:
                     print("[Error]:[Webhook-Parser] Reference: +" + str(e))
                     continue
                 
-                gmo = GMO.FromString(gmo_str)
+                
                 gmo_json = json.loads(MessageToJson(gmo))
-
-                '''
-                for mapCell in gmo.map_cells:
-                    
-                    for wild_Pokemons in mapCell.wild_pokemons:
- 
-                        self.wildPokemons.append(wild_Pokemons)
-                        
-                    for nearby_Pokemons in mapCell.nearby_pokemons:
-                    
-                        self.nearbyPokemons.append( nearby_Pokemons)
-                    for fort in mapCell.forts:
-                        
-                        if fort.type:
-                            self.pokestops.append(fort)
-                        else:
-                            self.gyms.append(fort)
-                '''
                 
             ## Encounter Response Parsing Block ##    
             elif D["Type"] == "EncounterResponse":
