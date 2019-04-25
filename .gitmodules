@@ -1,0 +1,3 @@
+[submodule "POGOProtosPython"]
+	path = POGOProtosPython
+	url = https://github.com/PotatoMapper/POGOProtosPython.git
