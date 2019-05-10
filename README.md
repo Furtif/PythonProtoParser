@@ -1,6 +1,6 @@
 # PythonProtoParser (Per the persistent badgering)
 **Manual Backbone** for PoGo Proto Parsing:
-Use [requestcatcher](www.requestcatcher.com) or similar site for *manual* PoGo Response Inspection.
+Use [requestcatcher](http://www.requestcatcher.com) or similar site for *manual* PoGo Response Inspection.
 
 *You can drop it on a Sanic endpoint and tweak it a bit for automated handling of response "+1"*
 
